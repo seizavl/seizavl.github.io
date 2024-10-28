@@ -51,7 +51,7 @@ const ProfileCard = () => {
           </a>
           <a className={styles.tweetItem} href="https://note.com/seizav/" target="_blank" rel="noopener noreferrer">
             <MdOutlineEventNote />
-            <span className={styles.tweetText}>NoteでVALORANTの記事を更新中</span>
+            <span className={styles.tweetText}>Note</span>
           </a>
         </div>
       </div>
