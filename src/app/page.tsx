@@ -5,7 +5,6 @@ import { Canvas } from '@react-three/fiber';
 import { FaTwitter, FaGithub, FaTwitch } from 'react-icons/fa';
 import { MdOutlineEventNote } from "react-icons/md";
 import '@fontsource/press-start-2p';
-import styled from 'styled-components'
 import { GradientBackground } from "./background/background"
 import Image from 'next/image';
 import styles from "./profile/page.module.css"
