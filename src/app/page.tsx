@@ -2,7 +2,7 @@
 "use client"
 
 import { Canvas } from '@react-three/fiber';
-import { FaTwitter, FaGithub,FaTwitch } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaTwitch } from 'react-icons/fa';
 import { MdOutlineEventNote } from "react-icons/md";
 import '@fontsource/press-start-2p';
 import styled from 'styled-components';
@@ -11,13 +11,9 @@ import { GradientBackground } from "./background/background"
 import Image from 'next/image';
 
 const ProfileCard = () => {
+  
   return (
-    <motion.div
-      style={cardContainerStyle}
-      initial={{ opacity: 0, y: 0,x: -250 }}
-      animate={{ opacity: 1, y: -200 }} 
-      transition={{ duration: 1, delay: 1.4 }} 
-    >
+    <div style={cardContainerStyle}>
       <div style={bannerStyle}></div>
       <div style={profileInfoStyle}>
         <div style={avatarContainerStyle}>
@@ -49,19 +45,22 @@ const ProfileCard = () => {
           </MenuItem>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
+
 const cardContainerStyle: React.CSSProperties = {
-  width: '500px',
+  width: '70%', // 幅を割合に変更
+  maxWidth: '500px', // 最大幅を指定
+  minWidth: '300px', // 最大幅を指定
   borderRadius: '15px',
   backgroundColor: '#000',
   color: '#FFF',
   fontFamily: '"Press Start 2P", Arial, sans-serif',
   overflow: 'hidden',
   outline: '0.5px solid #fff',
-  position: 'fixed', 
+  position: 'fixed',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
@@ -82,7 +81,7 @@ const profileInfoStyle: React.CSSProperties = {
 
 const avatarContainerStyle: React.CSSProperties = {
   margin: '0 auto',
-  width: '100px', 
+  width: '100px',
   height: '100px',
   borderRadius: '50px',
   overflow: 'hidden',
@@ -106,11 +105,9 @@ const usernameStyle: React.CSSProperties = {
 const menuContainerStyle: React.CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'flex-start', 
+  alignItems: 'center', // スマホでの中央揃え
   marginTop: '20px',
-  paddingLeft: '130px', 
 };
-
 
 const menuTextStyle: React.CSSProperties = {
   color: '#F0F8FF',
@@ -130,9 +127,8 @@ const MenuItem = styled.a`
 
   &:hover {
     transform: translateY(-4px) scale(1.01);
-    width: calc(100% + 50px); 
-    margin-left: -20px; 
-    margin-right: -20px; 
+    margin-left: -20px;
+    margin-right: -20px;
   }
 `;
 
