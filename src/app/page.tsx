@@ -22,7 +22,7 @@ const ProfileCard = () => {
       <div style={profileInfoStyle}>
         <div style={avatarContainerStyle}>
           <img
-            src="https://pbs.twimg.com/profile_images/1850392982295580672/xMGbCcN5_400x400.jpg"
+            src="/icon.png"
             alt="Avatar"
             style={avatarStyle}
           />
