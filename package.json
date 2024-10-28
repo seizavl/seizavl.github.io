@@ -2,16 +2,20 @@
   "name": "linktr",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://seizavl.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@fontsource/press-start-2p": "^5.1.0",
     "@react-three/fiber": "^8.17.10",
     "framer-motion": "^11.11.10",
+    "gh-pages": "^6.2.0",
     "next": "14.2.16",
     "react": "^18",
     "react-dom": "^18",

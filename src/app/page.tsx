@@ -1,14 +1,14 @@
 // pages/index.tsx
 "use client"
 
-import { Canvas, useThree } from '@react-three/fiber';
-import { FaTwitter, FaGithub } from 'react-icons/fa';
+import { Canvas } from '@react-three/fiber';
+import { FaTwitter, FaGithub,FaTwitch } from 'react-icons/fa';
 import { MdOutlineEventNote } from "react-icons/md";
 import '@fontsource/press-start-2p';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { GradientBackground } from "./background/background"
-
+import Image from 'next/image';
 
 const ProfileCard = () => {
   return (
@@ -21,10 +21,12 @@ const ProfileCard = () => {
       <div style={bannerStyle}></div>
       <div style={profileInfoStyle}>
         <div style={avatarContainerStyle}>
-          <img
+          <Image
             src="/icon.png"
             alt="Avatar"
             style={avatarStyle}
+            width={500}
+            height={500}
           />
         </div>
         <h2 style={usernameStyle}>mao</h2>
@@ -41,6 +43,10 @@ const ProfileCard = () => {
             <FaGithub />
             <span style={menuTextStyle}>GitHub</span>
           </MenuItem>
+          <MenuItem href="https://www.twitch.tv/maovlrt" target="_blank">
+            <FaTwitch />
+            <span style={menuTextStyle}>Twitch</span>
+          </MenuItem>
         </div>
       </div>
     </motion.div>
@@ -54,7 +60,7 @@ const cardContainerStyle: React.CSSProperties = {
   color: '#FFF',
   fontFamily: '"Press Start 2P", Arial, sans-serif',
   overflow: 'hidden',
-  outline: '1px solid #fff',
+  outline: '0.5px solid #fff',
   position: 'fixed', 
   top: '50%',
   left: '50%',
@@ -88,7 +94,6 @@ const avatarStyle: React.CSSProperties = {
   width: '100%',
   height: '100%',
   objectFit: 'cover',
-  imageRendering: 'pixelated',
 };
 
 const usernameStyle: React.CSSProperties = {
