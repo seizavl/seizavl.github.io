@@ -10,7 +10,7 @@ export const GradientBackground = () => {
     useEffect(() => {
       let frameId = 0;
       const duration = 2;
-      const startColor = new THREE.Color('#5c658b');
+      const startColor = new THREE.Color('#020b1c');
       const endColor = new THREE.Color('#051637');
       
       const changeColor = (elapsedTime: number) => {
