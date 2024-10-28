@@ -50,15 +50,15 @@ const ProfileCard = () => {
 
 
 const cardContainerStyle: React.CSSProperties = {
-  width: '70%', // 幅を割合に変更
-  maxWidth: '500px', // 最大幅を指定
-  minWidth: '300px', // 最大幅を指定
+  width: '70%', 
+  maxWidth: '400px',
+  minWidth: '300px', 
   borderRadius: '15px',
   backgroundColor: '#000',
   color: '#FFF',
   fontFamily: '"Press Start 2P", Arial, sans-serif',
   overflow: 'hidden',
-  outline: '0.5px solid #fff',
+  outline: '1px solid #fff',
   position: 'fixed',
   top: '50%',
   left: '50%',
@@ -102,9 +102,9 @@ const usernameStyle: React.CSSProperties = {
 };
 
 const menuContainerStyle: React.CSSProperties = {
-  display: 'flex',
+  display: "block",
   flexDirection: 'column',
-  alignItems: 'center', // スマホでの中央揃え
+  alignItems: 'left',
   marginTop: '20px',
 };
 
@@ -117,15 +117,14 @@ const MenuItem = styled.a`
   display: flex;
   align-items: center;
   gap: 10px;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 10px 40px;
+  font-size: 0.7rem;
   cursor: pointer;
   transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, width 0.2s ease;
   width: auto;
 
   &:hover {
-    transform: translateY(-4px) scale(1.01);
+    transform: translateY(-1px) scale(1.01);
     margin-left: -20px;
     margin-right: -20px;
   }
