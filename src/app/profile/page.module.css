@@ -1,21 +1,21 @@
 /* カードコンテナ */
 .cardContainer {
-    width: 70%;
-    max-width: 400px;
-    min-width: 300px;
-    border-radius: 15px;
-    background-color: #15202B;
-    color: #E1E8ED;
-    font-family: 'Arial, sans-serif';
-    overflow: hidden;
-    outline: 1px solid #38444D;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 10;
-  }
+  width: 70%;
+  max-width: 400px;
+  min-width: 300px;
+  border-radius: 15px;
+  background-color: #15202B;
+  color: #E1E8ED;
+  font-family: "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  overflow: hidden;
+  outline: 1px solid #38444D;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
   
   /* バナー */
   .banner {
