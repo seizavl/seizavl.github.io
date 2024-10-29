@@ -31,6 +31,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install San Francisco font
+        run: |
+          mkdir -p ~/.fonts
+          cp src/app/fonts/SFUIDisplay-Light.ttf ~/.fonts/
+          fc-cache -fv
       - name: Detect package manager
         id: detect-package-manager
         run: |
