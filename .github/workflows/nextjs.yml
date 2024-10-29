@@ -31,6 +31,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install San Francisco font
+        run: |
+          mkdir -p ~/.fonts
+          cd ~/.fonts
+          wget https://developer.apple.com/design/downloads/SF-Pro.dmg -O SF-Pro.dmg
+          7z x SF-Pro.dmg -oSF-Pro-extracted
+          cp SF-Pro-extracted/**/*.ttf ~/.fonts/
+          fc-cache -fv  # フォントキャッシュの更新
       - name: Detect package manager
         id: detect-package-manager
         run: |
