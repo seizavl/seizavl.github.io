@@ -34,11 +34,8 @@ jobs:
       - name: Install San Francisco font
         run: |
           mkdir -p ~/.fonts
-          cd ~/.fonts
-          wget https://developer.apple.com/design/downloads/SF-Pro.dmg -O SF-Pro.dmg
-          7z x SF-Pro.dmg -oSF-Pro-extracted
-          cp SF-Pro-extracted/**/*.ttf ~/.fonts/
-          fc-cache -fv  # フォントキャッシュの更新
+          cp src/app/fonts/SFUIDisplay-Light.ttf ~/.fonts/
+          fc-cache -fv
       - name: Detect package manager
         id: detect-package-manager
         run: |
