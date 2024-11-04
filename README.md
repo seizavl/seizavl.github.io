@@ -1,1 +1,1 @@
-linktr
+https://seizavl.github.io
