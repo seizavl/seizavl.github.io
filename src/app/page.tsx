@@ -24,7 +24,7 @@ const ProfileCard = () => {
       <div className={styles.profileInfo}>
         <div className={styles.avatarContainer}>
           <Image
-            src="/icon.png"
+            src="/icon2.png"
             alt="Avatar"
             width={80}
             height={80}
